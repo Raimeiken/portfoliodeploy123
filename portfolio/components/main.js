@@ -17,7 +17,7 @@ function MainHome() {
 
                 <div className="home__perfil">
                     <div className="home__image">
-                        <Image src={image1} layout='inherit' className='home__img'/>
+                        <Image src={image1} layout='inherit' className='home__img'alt='image1'/>
                         <div className="home__shadow"></div>
 
 
