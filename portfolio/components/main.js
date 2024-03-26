@@ -1,6 +1,6 @@
-import '../style.css'
-import { RiFacebookCircleLine, RiInstagramLine, RiLinkedinBoxLine, RiGithubLine, RiCodeBoxLine, RiLayout2Line, RiSmartphoneLine } from 'react-icons/ri';
-import Image from 'next/image';
+import "../style.css"
+import { RiFacebookCircleLine, RiInstagramLine, RiLinkedinBoxLine, RiGithubLine, RiCodeBoxLine, RiLayout2Line, RiSmartphoneLine } from "react-icons/ri";
+import Image from "next/image";
 import image1 from "../public/ScreenshotPort3 (11).png"
 import image2 from "../public/ScreenshotPort2 (11).png"
 
@@ -41,7 +41,7 @@ function MainHome() {
 
                 <div className="home__info">
                     <p className="home__description">
-                        <b>Frontend Developer</b>,with knowledge in web development and design,
+                        <b>Frontend Developer</b>with knowledge in web development and design,
                         We offer the best projects resulting in satisfying work.
                     </p>
 
@@ -60,7 +60,7 @@ function MainHome() {
         <section className="about section" id="about">
             <div className="about__container container grid">
                 <h2 className="section__title-1">
-                    <span>About Us.</span>
+                    <span>About Us</span>
                 </h2>
 
                 <div className="about__perfil">
@@ -77,11 +77,11 @@ function MainHome() {
 
                 <div className="about__info">
                     <p className="about__description">
-                        Creating <b>Web Pages</b> with <b>UI/UX User Interface</b>, I will be more than happy to work on your projects.
+                        Creating <b>Web Pages</b> with <b>UI/UX User Interface</b> I will be more than happy to work on your projects.
                     </p>
                     <ul className="about__list">
                         <li className="about__item">
-                            <b>My Skills Are:</b>HTML,CSS,Javascript,React,Github,Figma.
+                            <b>My Skills Are:</b>HTML CSS Javascript React Github Figma.
                         </li>
                     </ul>
 
@@ -117,7 +117,7 @@ function MainHome() {
                         <h2 className="services__title">Development</h2>
 
                         <p className="services__description">
-                            Custom web development tailored to your specifications,
+                            Custom web development tailored to your specifications
                             designed to provide a flawless user experience.
                         </p>
                     </div>
@@ -135,7 +135,7 @@ function MainHome() {
                         <h2 className="services__title">Web Design</h2>
 
                         <p className="services__description">
-                            Beautiful and elegant design with interfaces that are intuitive,
+                            Beautiful and elegant design with interfaces that are intuitive
                             efficient and pleasant to use for the user.
                         </p>
                     </div>
@@ -183,7 +183,7 @@ function MainHome() {
                         <h2 className="projects__title">??? Website</h2>
 
                         <p className="projects__description">
-                            Project that you can carry out in the design and structure of the layout,
+                            Project that you can carry out in the design and structure of the layout
                             showing the design at the client's request.
                         </p>
                     </div>
@@ -213,7 +213,7 @@ function MainHome() {
                         <h2 className="projects__title">??? App</h2>
 
                         <p className="projects__description">
-                            Project that you can carry out in the design and structure of the layout,
+                            Project that you can carry out in the design and structure of the layout
                             showing the design at the client's request.
                         </p>
                     </div>
@@ -243,7 +243,7 @@ function MainHome() {
                         <h2 className="projects__title">??? App</h2>
 
                         <p className="projects__description">
-                            Project that you can carry out in the design and structure of the layout,
+                            Project that you can carry out in the design and structure of the layout
                             showing the design at the client's request.
                         </p>
                     </div>
