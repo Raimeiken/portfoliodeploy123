@@ -1,5 +1,5 @@
-import { RiCloseLine, RiMoonClearLine } from 'react-icons/ri'
-import '../style.css'
+import { RiCloseLine, RiMoonClearLine } from "react-icons/ri"
+import "../style.css"
 function Navbar() {
   return (
     <header className="header" id="header">
