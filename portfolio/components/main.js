@@ -1,13 +1,32 @@
+"use client"
 import "../style.css"
-import { RiFacebookCircleLine, RiInstagramLine, RiLinkedinBoxLine, RiGithubLine, RiCodeBoxLine, RiLayout2Line, RiSmartphoneLine } from "react-icons/ri";
+import { RiFacebookCircleLine, RiInstagramLine, RiLinkedinBoxLine, RiGithubLine, RiCodeBoxLine, RiLayout2Line, RiSmartphoneLine, RiArrowDownLine } from "react-icons/ri";
 import Image from "next/image";
 import image1 from "../public/ScreenshotPort3 (11).png"
 import image2 from "../public/ScreenshotPort2 (11).png"
+import { useEffect } from "react";
+
+import gsap from "gsap";
+
 
 
 
 function MainHome() {
+
+    useEffect(() => {
+        gsap.from(".home__name", { opacity: 0, y: 50, duration: 1, delay: 0.5,opacity: 1});
+        gsap.from(".home__perfil", { opacity: 0, y: 50, duration: 1, delay: 0.7 ,opacity: 1 });
+        gsap.from(".home__info", { opacity: 0, y: 50, duration: 1, delay: 0.9,opacity: 1 });
+        gsap.from(".about__container", { opacity: 0, y: 50, duration: 1, delay: 0.5,opacity: 1 });
+        gsap.from(".services__container", { opacity: 0, y: 50, duration: 1, delay: 0.5,opacity: 1 });
+        gsap.from(".projects__container", { opacity: 0, y: 50, duration: 1, delay: 0.5,opacity: 1 });
+        gsap.from(".contact__container", { opacity: 0, y: 50, duration: 1, delay: 0.5,opacity: 1 });
+      }, []);
+    
+
+
   return (
+    <>
     <main className="main">
         <section className="home section" id="home">
             <div className="home__container container grid">
@@ -41,13 +60,13 @@ function MainHome() {
 
                 <div className="home__info">
                     <p className="home__description">
-                        <b>Frontend Developer</b>with knowledge in web development and design,
+                        <b>Frontend Developer</b>with knowledge in web development and design&apos;
                         We offer the best projects resulting in satisfying work.
                     </p>
 
                     <a href="#about" className="home__scroll">
                         <div className="home__scroll-box">
-                            <i className="ri-arrow-down-s-line"></i>
+                            <i className="ri-arrow-down-s-line"><RiArrowDownLine/></i>
                         </div>
 
                         <span className="home__scroll-text">Scroll Down</span>
@@ -81,7 +100,7 @@ function MainHome() {
                     </p>
                     <ul className="about__list">
                         <li className="about__item">
-                            <b>My Skills Are:</b>HTML CSS Javascript React Github Figma.
+                            <b>My Skills Are:</b>HTML CSS Javascript Python React.js Django Express.js Node.js Next.js MondoDb MySQL Github Figma .
                         </li>
                     </ul>
 
@@ -171,7 +190,7 @@ function MainHome() {
             <div className="projects__container container grid">
                 <article className="projects__card">
                     <div className="projects__image">
-                        <img src="assets/img/skyward-Harp.png" alt="image" className="projects__img"/>
+                        <Image src="/../assets/img/skyward-Harp.png" alt="image" className="projects__img" width={1} height={1}/>
 
                         <a href="#" className="projects__button button">
                             <i className="ri-arrow-right-up-line"></i>
@@ -184,7 +203,7 @@ function MainHome() {
 
                         <p className="projects__description">
                             Project that you can carry out in the design and structure of the layout
-                            showing the design at the client's request.
+                            showing the design at the client&apos;s request.
                         </p>
                     </div>
 
@@ -201,7 +220,7 @@ function MainHome() {
 
                 <article className="projects__card">
                     <div className="projects__image">
-                        <img src="assets/img/engulfing lightning.jpg" alt="image" className="projects__img"/>
+                        <Image src="/../assets/img/engulfing lightning.jpg" alt="image" className="projects__img" width={1} height={1}/>
 
                         <a href="#" className="projects__button button">
                             <i className="ri-arrow-right-up-line"></i>
@@ -214,7 +233,7 @@ function MainHome() {
 
                         <p className="projects__description">
                             Project that you can carry out in the design and structure of the layout
-                            showing the design at the client's request.
+                            showing the design at the client&apos;s request.
                         </p>
                     </div>
 
@@ -231,7 +250,7 @@ function MainHome() {
 
                 <article className="projects__card">
                     <div className="projects__image">
-                        <img src="assets/img/mistplitter.png" alt="image" className="projects__img"/>
+                        <Image src="/../assets/img/mistplitter.png" alt="image" className="projects__img" width={1} height={1}/>
 
                         <a href="#" className="projects__button button">
                             <i className="ri-arrow-right-up-line"></i>
@@ -244,7 +263,7 @@ function MainHome() {
 
                         <p className="projects__description">
                             Project that you can carry out in the design and structure of the layout
-                            showing the design at the client's request.
+                            showing the design at the client&apos;s request.
                         </p>
                     </div>
 
@@ -361,7 +380,7 @@ function MainHome() {
 
                     <p className="contact__description-1">
                         I will read all emails.
-                        Send me any message you want and I'll get back to you.
+                        Send me any message you want and I&apos;ll get back to you.
                     </p>
 
                     <p className="contact__description-2">
@@ -408,7 +427,7 @@ function MainHome() {
                 </div>
 
                 <div className="contact__social">
-                    <img src="" alt="" className="contact__social-arrow"/>
+                    <Image src="" alt="" className="contact__social-arrow"/>
 
                     <div className="contact__social-data">
                         <div>
@@ -422,7 +441,7 @@ function MainHome() {
                         </div>
 
                         <div className="contact__social-links">
-                            <a href="https://www.facebook.com/" target="_blank" className="contact__social-link">
+                            <a href="https://www.facebook.com/bayarjargal.enhjargal.5" target="_blank" className="contact__social-link">
                             <RiFacebookCircleLine />
 
                             </a>
@@ -441,6 +460,9 @@ function MainHome() {
         </section>
 
     </main>
+
+    
+    </>
     
   )
 }
